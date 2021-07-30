@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dummy">
+
+
+
+    <TextView
+        android:id="@+id/userMailId"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/teal_200"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+
+        />
+
+    <Button
+        android:id="@+id/navButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Navigation"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/teal_200"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+
+        />
+
+    <Button
+        android:id="@+id/found_query_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Found Query"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/teal_200"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+
+        />
+
+
+</LinearLayout>

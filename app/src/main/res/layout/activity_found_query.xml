@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoundQuery">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/found_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_700"
+        app:title="Raise a Found Query"
+        app:titleTextColor="#FFFFFF"
+        app:titleMarginStart="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+
+            >
+            <TextView
+                android:id="@+id/f_selectCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="left|center"
+                android:text="Select Category "
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="10sp"
+
+                />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="left|center"
+                android:autofillHints="Choose Type"
+
+                />
+
+            <EditText
+                android:id="@+id/f_Item_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="left|center"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Item name"
+                android:background="@drawable/edit_box"
+                android:padding="10dp"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="95dp" />
+            <EditText
+                android:id="@+id/f_message"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="left|top"
+                android:ems="10"
+                android:hint="Message"
+                android:background="@drawable/edit_box"
+                android:padding="10dp"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="95dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:padding="1dp"
+                >
+
+                <TextView
+                    android:id="@+id/f_date"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:hint=" Select Date"
+                    android:padding="10dp"
+                    android:background="@drawable/edit_box"
+                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="left|center"
+                    android:layout_marginBottom="10dp"
+
+                    />
+                <TextView
+                    android:id="@+id/f_time"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:hint="Select time"
+                    android:padding="10dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/edit_box"
+                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="left|center"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/f_contact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="left|center"
+                android:ems="10"
+                android:hint="Contact"
+                android:inputType="phone"
+                android:background="@drawable/edit_box"
+                android:padding="10dp"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="95dp"
+                />
+
+            <EditText
+                android:id="@+id/f_location"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="left|center"
+                android:ems="10"
+                android:hint="Location"
+                android:background="@drawable/edit_box"
+                android:padding="10dp"
+                android:paddingBottom="12dp"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="95dp"
+                />
+
+            <TextView
+                android:id="@+id/f_textchoose"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Choose image"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="10sp"
+
+                />
+
+            <ImageView
+                android:id="@+id/f_chooseImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/ic_baseline_add_a_photo_24"
+
+                />
+
+            <Button
+                android:id="@+id/f_SubmitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/selection_button"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:ems="10"
+                android:textSize="30dp"
+                android:textAllCaps="false"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

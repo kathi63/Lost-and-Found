@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/menu1_share"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="share"
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/ic_baseline_menu_24"
+        app:showAsAction="always"
+        android:title="">
+        <menu>
+            <item android:id="@+id/menu1_home"
+                android:icon="@drawable/ic_baseline_refresh_24"
+                android:title="Refresh"
+                app:showAsAction="never"
+                />
+            <item android:id="@+id/menu1_profile"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:title="Profile"
+                app:showAsAction="never"
+                />
+
+            <item android:id="@+id/menu1_my_quries"
+                android:icon="@drawable/ic_baseline_message_black"
+                android:title="My Quries"
+                app:showAsAction="never"
+                />
+            <item android:id="@+id/menu1_logout"
+                android:icon="@drawable/ic_baseline_logout_24"
+                android:title="Logout"
+                app:showAsAction="never"
+                />
+        </menu>
+
+
+    </item>
+
+</menu>
